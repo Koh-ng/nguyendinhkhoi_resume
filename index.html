@@ -19,13 +19,15 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-card">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold text-xl tracking-tight">KHOI<span class="text-blue-600">.ND</span></span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+            <span class="font-bold text-xl tracking-tight">NGUYEN DINH<span class="text-blue-600"> KHOI</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600 items-center">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
                 <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
                 <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
-                <a href="mailto:khoind2601@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+                <a href="nguyendinhkhoi_cv.pdf" download class="flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                    <i data-lucide="download" class="w-4 h-4"></i> Resume
+                </a>
             </div>
         </div>
     </nav>
@@ -41,14 +43,14 @@
                     Building scalable <span class="gradient-text">AI solutions</span> for business growth.
                 </h1>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                    Data Science & Analytics professional with 3+ years of experience delivering end-to-end solutions. 
+                    Data Science & Analytics professional with 3+ years of experience delivering end-to-end data solutions. 
                     From high-performance data infrastructure to GenAI-powered knowledge hubs at Prudential Vietnam.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://www.linkedin.com/in/kn02" target="_blank" class="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl hover:opacity-90 transition">
-                        <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+                    <a href="https://www.linkedin.com/in/kn02" target="_blank" class="flex items-center gap-2 bg-[#0077b5] text-white px-6 py-3 rounded-xl hover:opacity-90 transition shadow-lg shadow-blue-100 font-medium">
+                        <i data-lucide="linkedin" class="w-5 h-5" stroke-width="2.5"></i> LinkedIn
                     </a>
-                    <a href="mailto:khoind2601@gmail.com" class="flex items-center gap-2 border border-slate-200 bg-white px-6 py-3 rounded-xl hover:bg-slate-50 transition">
+                    <a href="mailto:khoind2601@gmail.com" class="flex items-center gap-2 border border-slate-200 bg-white px-6 py-3 rounded-xl hover:bg-slate-50 transition font-medium">
                         <i data-lucide="mail" class="w-5 h-5"></i> Email Me
                     </a>
                 </div>
@@ -227,14 +229,17 @@
         <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <p class="text-slate-500 text-sm">© 2026 Nguyen Dinh Khoi. Built for high-performance analytics.</p>
             <div class="flex space-x-6">
-                <a href="https://www.linkedin.com/in/kn02" class="text-slate-400 hover:text-blue-600"><i data-lucide="linkedin"></i></a>
-                <a href="mailto:khoind2601@gmail.com" class="text-slate-400 hover:text-blue-600"><i data-lucide="mail"></i></a>
+                <a href="https://www.linkedin.com/in/kn02" class="text-slate-400 hover:text-[#0077b5] transition-colors"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:khoind2601@gmail.com" class="text-slate-400 hover:text-blue-600 transition-colors"><i data-lucide="mail"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
-        lucide.createIcons();
+        // Ensure icons are created after DOM is fully loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
     </script>
 </body>
 </html>
